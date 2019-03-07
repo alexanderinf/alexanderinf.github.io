@@ -1,0 +1,47 @@
+﻿{
+	"$schema": "https://statics.teams.microsoft.com/sdk/v1.0/manifest/MicrosoftTeams.schema.json",
+	"manifestVersion": "1.0",
+	"version": "1.0.0",
+	"id": "97f29d5d-5a4d-4f63-a059-0f8d3478c890",
+	"packageName": "com.contoso.helloworld",
+	"developer": {
+		"name": "Aura Teams Client",
+		"websiteUrl": "https://www.microsoft.com",
+		"privacyUrl": "https://www.microsoft.com/privacy",
+		"termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+	},
+	 "name": {
+        "short": "AuraTeams",
+        "full": "Aura Alliance Client for Teams"
+    },
+    "description": {
+        "short": "Aura Alliance Client for Teams",
+        "full": "Aura Alliance Client for Teams"
+    },
+	"icons": {
+		"color": "dark-bg-logo.png",
+		"outline": "outline.png"
+	},
+	"accentColor": "#60A18E",
+	"staticTabs": [
+    {
+      "entityId": "com.contoso.helloworld.hellotab",
+      "name": "Hello Tab",
+      "contentUrl": "https://33d4ce0d.ngrok.io/",
+      "scopes": [
+        "personal"
+      ]
+    }
+	],
+	"configurableTabs": [
+    {
+      "configurationUrl": "https://33d4ce0d.ngrok.io/first",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+	],	
+	"permissions": [],
+	"validDomains": []
+}

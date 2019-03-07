@@ -1,0 +1,133 @@
+﻿@model Microsoft.Teams.Samples.HelloWorld.Web.Models.CallViewModel
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title></title>
+	<link href="~/Styles/StyleDial.css" rel="stylesheet">
+	@*<script src="~/Scripts/JavaScriptDial.js"></script>*@
+	<script>
+		function setNumber(number) {
+			document.getElementById("telNumber").value += number
+		}
+	</script>
+
+</head>
+<body>
+	<form asp-controller="DialController" asp-action="Call" method="post">
+		<input asp-for="Phone" width="250" type="tel" id="telNumber" class="form-control tel" value="" />
+		<input type="submit" value="Call" />
+
+		<table border="0">
+			<tr>
+				<td width="80">
+					<div class="num" onclick="setNumber(1)">
+						<div class="txt">
+							1 <span class="small">
+								<p>
+
+								</p>
+							</span>
+						</div>
+					</div>
+				</td>
+				<td width="80">
+					<div class="num" onclick="setNumber(2)">
+						<div class="txt">
+							2 <span class="small">
+								<p>
+									ABC
+								</p>
+							</span>
+						</div>
+					</div>
+
+				</td>
+				<td width="80">
+					<div class="num" onclick="setNumber(3)">
+						<div class="txt">
+							3 <span class="small">
+								<p>
+									DEF
+								</p>
+							</span>
+						</div>
+					</div>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="num" onclick="setNumber(4)">
+						<div class="txt">
+							4 <span class="small">
+								<p>
+									GHI
+								</p>
+							</span>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="num" onclick="setNumber(5)">
+						<div class="txt">
+							5 <span class="small">
+								<p>
+									JKL
+								</p>
+							</span>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="num" onclick="setNumber(6)">
+						<div class="txt">
+							6 <span class="small">
+								<p>
+									MNO
+								</p>
+							</span>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="num" onclick="setNumber(7)">
+						<div class="txt">
+							7 <span class="small">
+								<p>
+									PQRS
+								</p>
+							</span>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="num" onclick="setNumber(8)">
+						<div class="txt">
+							8 <span class="small">
+								<p>
+									TUV
+								</p>
+							</span>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="num" onclick="setNumber(9)">
+						<div class="txt">
+							9 <span class="small">
+								<p>
+									WXYZ
+								</p>
+							</span>
+						</div>
+					</div>
+				<td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+
+</html>
